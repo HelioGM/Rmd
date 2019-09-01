@@ -1,0 +1,162 @@
+---
+title: "RMD test"
+output: ioslides_presentation
+widescreen: true
+smaller: true
+logo: Cmelo21.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# section 1
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets 
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with Bullets {.build}
+
+>- Bullet 1
+>- Bullet 2
+>- Bullet 3
+
+## Slide with Bullets {.build  .smaller}
+
+>- Bullet 1
+>- Bullet 2
+>- Bullet 3
+
+## Slide with Bullets {data-background=fondo6.png data-background-size=cover}
+
+>- Bullet 1
+>- Bullet 2
+>- Bullet 3
+
+## Slide with Bullets {.flexbox .vcenter data-background=fondo6.png data-background-size=cover}
+
+>- Bullet 1
+>- Bullet 2
+>- Bullet 3
+
+### <b>
+x <- 10
+y <- x * 2
+</b>
+
+## Slide with Bullets {.flexbox .vcenter data-background=fondo6.png data-background-size=cover}
+
+<div class="columns-2">
+>- Bullet 1
+>- Bullet 2
+>- Bullet 3
+
+### <b>
+>- x <- 10
+>- y <- x * 2
+</b>
+
+<div class="centered">
+>- texto prueba
+>- texto rojo
+</div>
+</div>
+</div>
+
+
+## Slide with Bullets {.flexbox .vcenter data-background=fondo6.png data-background-size=cover}
+
+<div class="columns-2">
+>- Bullet 1
+>- Bullet 2
+>- Bullet 3
+
+### <b>
+>- x <- 10
+>- y <- x * 2
+</b>
+
+<div class="centered">
+>- texto prueba
+>- texto rojo
+</div>
+  
+  
+</div>
+</div>
+
+
+
+## Slide with Bullets | subtitle {.flexbox .vcenter data-background=fondo6.png data-background-size=cover}
+
+<div class="columns-2">
+
+>- [Second-stage juvenile (J2)](Cmelo09_01.png)
+
+</div>
+
+## Slide with Bullets | subtitle
+
+----
+<div class="centered">
+
+frame no header
+
+![Second-stage juvenile (J2)](Cmelo09_01.png)
+</div>
+
+
+----
+<div class="centered">
+
+frame no header
+
+![Second-stage juvenile (J2)](Cmelo21.png)
+</div>
+
+----
+<div class="columns-2">
+
+```{r, fig.width=10, fig.height=2, fig.fullwidth=TRUE}
+knitr::include_graphics('./Cmelo21.png')
+
+```
+```{r, fig.width=10, fig.height=2, fig.fullwidth=TRUE}
+knitr::include_graphics('./Cmelo09_01.png')
+```
+
+```{r, fig.width=10, fig.height=2, fig.fullwidth=TRUE}
+knitr::include_graphics('./Cmelo21.png')
+
+```
+```{r, fig.width=10, fig.height=2, fig.fullwidth=TRUE}
+knitr::include_graphics('./Cmelo09_01.png')
+```
+
+</div>
+
+
+## Slide with R Output
+
+
+```{r, cars}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
+
+
